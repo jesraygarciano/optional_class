@@ -1,4 +1,4 @@
-# Java 1 weel Schedule
+# Java 1 week Schedule
 
 ## Pre-learning
 1. Install eclipse on your PC
