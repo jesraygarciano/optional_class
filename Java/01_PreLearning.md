@@ -16,8 +16,8 @@
 
   1. Create New Java Project
   2. Create Class File
-  3. Add main method
-  4. Run code
+  3. Add Main Method
+  4. Run Code
 
 ### 2.1 Create New Java Project
   1. Right Click on Package Explorer  
@@ -41,3 +41,13 @@
 
   2. Input 「sysout」 and 「Ctrl + Space」
     <img src="./images/06.gif">
+
+  3. Edit Code
+      > System.out.println("Hello World");
+
+### 2.4 Run Code
+  1. Click 「Run」
+    <img src="./images/07.png">
+  
+  1. Result
+    <img src="./images/08.png">
