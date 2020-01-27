@@ -19,5 +19,6 @@
   3. add main method
   4. run code
 
-### 2.1 Create New Java Project
-  <img src="./images/01.png">
+  ### 2.1 Create New Java Project
+
+    <img src="./images/01.png">
