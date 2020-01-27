@@ -16,9 +16,28 @@
 
   1. Create New Java Project
   2. Create Class File
-  3. add main method
-  4. run code
+  3. Add main method
+  4. Run code
 
-  ### 2.1 Create New Java Project
+### 2.1 Create New Java Project
+  1. Right Click on Package Explorer  
+    Select 「New」➞「Java Project」
+      <img src="./images/01.png">
 
-    <img src="./images/01.png">
+  2. Create Project
+    <img src="./images/02.png">
+
+### 2.2 Create Class File
+  1. Right Click on Your Project  
+    Select 「New」➞「Class」
+      <img src="./images/03.png">
+
+  2. Create Class
+    <img src="./images/04.png">
+
+### 2.3 Add Main Method
+  1. Input 「main」 and 「Ctrl + Space」
+    <img src="./images/05.gif">
+
+  2. Input 「sysout」 and 「Ctrl + Space」
+    <img src="./images/06.gif">
