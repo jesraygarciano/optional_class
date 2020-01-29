@@ -14,6 +14,8 @@
 2. Add main method
 3. Create a unique 3 digit random number
 4. User input 3 digit number
+5. Judge computer numbers and user input
+6. Display result
 
 ### 3. Create a unique 3 digit random number
 - Generate a 3-digit random number from 0 to 9.
@@ -199,3 +201,144 @@
 		      return ordinal;
 	      }
         ```
+
+    3. Add switch
+
+        ```Java
+        private static String convertIntToOrdinal(int number) {
+          String ordinal = "";
+
+          switch (number) {
+          case 1:
+            ordinal = "First";
+            break;
+
+          case 2:
+            ordinal = "Second";
+            break;
+
+          case 3:
+            ordinal = "Third";
+            break;
+
+          default:
+            break;
+          }
+
+          return ordinal;
+        }
+        ```
+
+    4. Call the function
+
+        ```Java
+        private static List<Integer> inputNumbers() {
+          List<Integer> userNumbers = new ArrayList<>();
+
+          Scanner scanner = new Scanner(System.in);
+
+          for (int i = 1; i <= DIGIT_NUMBER; i++) {
+            String ordinal = convertIntToOrdinal(i);
+            System.out.print("Please enter the " + ordinal + " digit：");
+
+            int num = scanner.nextInt();
+
+            userNumbers.add(num);
+          }
+
+          return userNumbers;
+        }
+        ```
+
+### 5. Judge computer numbers and user input
+
+1. make new function
+
+    ```Java
+    private static void judge(List<Integer> array1, List<Integer> array2) {
+
+	  }
+    ```
+
+2. return result
+
+    ```Java
+    private static boolean judge(List<Integer> array1, List<Integer> array2) {
+		  return array1.equals(array2);
+	  }
+    ```
+
+3. Let's call the method
+
+    ```Java
+    public static void main(String[] args) {
+
+  		List<Integer> numbers = generateNumbers();
+
+  		System.out.println(numbers);
+
+  		List<Integer> userNumbers = inputNumbers();
+
+  		System.out.println(userNumbers);
+
+      if (judge(numbers, userNumbers)) {
+        System.out.println("Correct");
+      } else {
+        System.out.println("Incorrect");
+      }
+    }
+    ```
+
+### 6. Display result
+
+1. make new function
+
+    ```Java
+    private static void displayResult() {
+
+	  }
+    ```
+
+2. Add print logic
+
+    ```Java
+    private static void displayResult() {
+      int hit = 0;
+      int blow = 0;
+
+      System.out.println("===Result===");
+      System.out.println(hit + "HIT, " + blow + "BLOW");
+      System.out.println("============");
+    }
+    ```
+
+3. Call method
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      List<Integer> userNumbers = inputNumbers();
+
+      System.out.println(userNumbers);
+
+      if (judge(numbers, userNumbers)) {
+        System.out.println("Correct");
+      } else {
+        displayResult();
+      }
+    }
+    ```
+
+4. make new function for count Hit
+
+    ```Java
+    private static int countHit(List<Integer> numbers, List<Integer> userNumbers) {
+      int count = 0;
+      
+      return count;
+	  }
+    ```
