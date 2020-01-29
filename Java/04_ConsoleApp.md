@@ -13,3 +13,189 @@
 1. Create New Project and New Class
 2. Add main method
 3. Create a unique 3 digit random number
+4. User input 3 digit number
+
+### 3. Create a unique 3 digit random number
+- Generate a 3-digit random number from 0 to 9.
+- The three digits are unique.
+
+1. create new function
+
+    ```Java
+    private static List<Integer> generateNumbers() {
+
+    }
+    ```
+
+2. create ArrayList for computer numbers
+
+    ```Java
+    private static List<Integer> generateNumbers() {
+      List<Integer> numbers = new ArrayList<>();
+
+      return numbers;
+    }
+    ```
+
+3. Let's call the method
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+    }
+    ```
+
+4. Add Random Numbers to ArrayList
+
+    ```Java
+    private static List<Integer> generateNumbers() {
+      List<Integer> numbers = new ArrayList<>();
+
+      Random rand = new Random();
+      int randomNumber = rand.nextInt(10);
+      numbers.add(randomNumber);
+      randomNumber = rand.nextInt(10);
+      numbers.add(randomNumber);
+      randomNumber = rand.nextInt(10);
+      numbers.add(randomNumber);
+
+      return numbers;
+    }
+    ```
+
+5. add while loop
+
+    1. Add const for digit
+
+      ```Java
+      public class Main {
+
+        private static final int DIGIT_NUMBER = 3;
+      ```
+
+    2. add logic
+
+      ```Java
+      private static List<Integer> generateNumbers() {
+        List<Integer> numbers = new ArrayList<>();
+
+        Random rand = new Random();
+
+        while (numbers.size() < DIGIT_NUMBER) {
+          int randomNumber = rand.nextInt(10);
+          numbers.add(randomNumber);
+
+        }
+        return numbers;
+      }
+      ```
+
+5. Add logic for unique number
+
+    ```Java
+    private static List<Integer> generateNumbers() {
+      List<Integer> numbers = new ArrayList<>();
+
+      Random rand = new Random();
+
+      while (numbers.size() < DIGIT_NUMBER) {
+        int randomNumber = rand.nextInt(10);
+        if (!numbers.contains(randomNumber)) {
+          numbers.add(randomNumber);
+        }
+      }
+      return numbers;
+    }
+    ```
+
+### 4. User input 3 digit number
+
+1. create new function
+
+    ```Java
+    private static List<Integer> inputNumbers() {
+		  List<Integer> userNumbers = new ArrayList<>();
+
+  		return userNumbers;
+	  }
+    ```
+
+2. Add user input logic
+
+    ```Java
+    private static List<Integer> inputNumbers() {
+      List<Integer> userNumbers = new ArrayList<>();
+
+      Scanner scanner = new Scanner(System.in);
+
+      System.out.print("Please enter the First digit：");
+
+      int num = scanner.nextInt();
+
+      userNumbers.add(num);
+
+      return userNumbers;
+	  }
+    ```
+
+3. Let's call the method
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      List<Integer> userNumbers = inputNumbers();
+
+      System.out.println(userNumbers);
+    }
+    ```
+
+4. Add loop for input 3 numbers
+
+    ```Java
+    private static List<Integer> inputNumbers() {
+
+      List<Integer> userNumbers = new ArrayList<>();
+
+      Scanner scanner = new Scanner(System.in);
+
+      for (int i = 1; i <= DIGIT_NUMBER; i++) {
+        System.out.print("Please enter the First digit：");
+
+        int num = scanner.nextInt();
+
+        userNumbers.add(num);
+      }
+
+      return userNumbers;
+    }
+    ```
+
+5. Create function for switching Ordinal text
+
+    > Current code, every time print `Please enter the First digit：`
+
+
+    1. make new function
+
+        ```Java
+        private static void convertIntToOrdinal(int number) {
+
+        }
+        ```
+
+    2. add return
+
+        ```Java
+        private static String convertIntToOrdinal(int number) {
+		      String ordinal = "";
+
+		      return ordinal;
+	      }
+        ```
