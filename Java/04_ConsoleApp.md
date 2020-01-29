@@ -338,7 +338,50 @@
     ```Java
     private static int countHit(List<Integer> numbers, List<Integer> userNumbers) {
       int count = 0;
-      
+
+      return count;
+    }
+    ```
+
+    > HIT is that matches the number and the location.
+
+
+    ```Java
+    private static int countHit(List<Integer> numbers, List<Integer> userNumbers) {
+      int count = 0;
+
+      for (int i = 0; i < DIGIT_NUMBER; i++) {
+        if (numbers.get(i) != userNumbers.get(i) && userNumbers.contains(numbers.get(i))) {
+          count++;
+        }
+      }
+
+      return count;
+    }
+    ```
+
+5. make new function for count Blow
+
+    ```Java
+    private static int countBlow(List<Integer> numbers, List<Integer> userNumbers) {
+      int count = 0;
+
+      return count;
+    }
+    ```
+
+    > BLOW is that have the same number, but the location is different.
+
+    ```Java
+    private static int countBlow(List<Integer> numbers, List<Integer> userNumbers) {
+      int count = 0;
+
+      for (int i = 0; i < DIGIT_NUMBER; i++) {
+        if (numbers.get(i) != userNumbers.get(i) && userNumbers.contains(numbers.get(i))) {
+          count++;
+        }
+      }
+
       return count;
     }
     ```
