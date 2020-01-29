@@ -119,10 +119,10 @@
 
     ```Java
     private static List<Integer> inputNumbers() {
-		  List<Integer> userNumbers = new ArrayList<>();
+      List<Integer> userNumbers = new ArrayList<>();
 
-  		return userNumbers;
-	  }
+      return userNumbers;
+    }
     ```
 
 2. Add user input logic
@@ -140,7 +140,7 @@
       userNumbers.add(num);
 
       return userNumbers;
-	  }
+    }
     ```
 
 3. Let's call the method
@@ -196,10 +196,10 @@
 
         ```Java
         private static String convertIntToOrdinal(int number) {
-		      String ordinal = "";
+          String ordinal = "";
 
-		      return ordinal;
-	      }
+          return ordinal;
+        }
         ```
 
     3. Add switch
@@ -257,15 +257,15 @@
     ```Java
     private static void judge(List<Integer> array1, List<Integer> array2) {
 
-	  }
+    }
     ```
 
 2. return result
 
     ```Java
     private static boolean judge(List<Integer> array1, List<Integer> array2) {
-		  return array1.equals(array2);
-	  }
+      return array1.equals(array2);
+    }
     ```
 
 3. Let's call the method
@@ -273,13 +273,13 @@
     ```Java
     public static void main(String[] args) {
 
-  		List<Integer> numbers = generateNumbers();
+      List<Integer> numbers = generateNumbers();
 
-  		System.out.println(numbers);
+      System.out.println(numbers);
 
-  		List<Integer> userNumbers = inputNumbers();
+      List<Integer> userNumbers = inputNumbers();
 
-  		System.out.println(userNumbers);
+      System.out.println(userNumbers);
 
       if (judge(numbers, userNumbers)) {
         System.out.println("Correct");
@@ -296,7 +296,7 @@
     ```Java
     private static void displayResult() {
 
-	  }
+    }
     ```
 
 2. Add print logic
@@ -340,5 +340,5 @@
       int count = 0;
       
       return count;
-	  }
+    }
     ```
