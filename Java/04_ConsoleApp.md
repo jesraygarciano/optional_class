@@ -16,6 +16,8 @@
 4. User input 3 digit number
 5. Judge computer numbers and user input
 6. Display result
+7. Add turn logic
+8. remove Unnecessary code
 
 ### 3. Create a unique 3 digit random number
 - Generate a 3-digit random number from 0 to 9.
@@ -351,7 +353,7 @@
       int count = 0;
 
       for (int i = 0; i < DIGIT_NUMBER; i++) {
-        if (numbers.get(i) != userNumbers.get(i) && userNumbers.contains(numbers.get(i))) {
+        if (numbers.get(i) == userNumbers.get(i)) {
           count++;
         }
       }
@@ -385,3 +387,122 @@
       return count;
     }
     ```
+
+6. Let's use hit and blow function
+
+    ```Java
+    private static void displayResult(List<Integer> numbers, List<Integer> userNumbers) {
+      int hit = countHit(numbers, userNumbers);
+      int blow = countBlow(numbers, userNumbers);
+
+      System.out.println("===Result===");
+      System.out.println(hit + "HIT, " + blow + "BLOW");
+      System.out.println("============");
+    }
+    ```
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      List<Integer> userNumbers = inputNumbers();
+
+      System.out.println(userNumbers);
+
+      if (judge(numbers, userNumbers)) {
+        System.out.println("Correct");
+      } else {
+        displayResult(numbers, userNumbers);
+      }
+    }
+    ```
+
+### 7. Add turn logic
+
+1. Add while loop until user clear game
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      while (true) {
+        List<Integer> userNumbers = inputNumbers();
+
+        System.out.println(userNumbers);
+
+        if (judge(numbers, userNumbers)) {
+          System.out.println("Correct");
+          break;
+        } else {
+          displayResult(numbers, userNumbers);
+        }
+      }
+    }
+    ```
+
+2. Add variables for counting turn
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      int turnNum = 0;
+
+      while (true) {
+
+        turnNum++;
+
+        List<Integer> userNumbers = inputNumbers();
+
+        System.out.println(userNumbers);
+
+        if (judge(numbers, userNumbers)) {
+          System.out.println("Correct");
+          break;
+        } else {
+          displayResult(numbers, userNumbers);
+        }
+      }
+    }
+    ```
+
+3. Print result with turn count
+
+    ```Java
+    public static void main(String[] args) {
+
+      List<Integer> numbers = generateNumbers();
+
+      System.out.println(numbers);
+
+      int turnNum = 0;
+
+      while (true) {
+
+        turnNum++;
+
+        List<Integer> userNumbers = inputNumbers();
+
+        System.out.println(userNumbers);
+
+        if (judge(numbers, userNumbers)) {
+          System.out.println("！！！！！Game Clear！！！！！");
+				  System.out.println("Completed in " + turnNum + " turns");
+          break;
+        } else {
+          displayResult(numbers, userNumbers);
+        }
+      }
+    }
+    ```
+
+### 8. remove Unnecessary code
