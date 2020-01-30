@@ -508,35 +508,35 @@
 
 ### 8. remove Unnecessary code
 
-    ```Java
-    public static void main(String[] args) {
+  ```Java
+  public static void main(String[] args) {
 
-      List<Integer> numbers = generateNumbers();
+    List<Integer> numbers = generateNumbers();
+
+    // no need
+    // System.out.println(numbers);
+
+    int turnNum = 0;
+
+    while (true) {
+
+      turnNum++;
+
+      List<Integer> userNumbers = inputNumbers();
 
       // no need
-      // System.out.println(numbers);
+      // System.out.println(userNumbers);
 
-      int turnNum = 0;
-
-      while (true) {
-
-        turnNum++;
-
-        List<Integer> userNumbers = inputNumbers();
-
-        // no need
-        // System.out.println(userNumbers);
-
-        if (judge(numbers, userNumbers)) {
-          System.out.println("！！！！！Game Clear！！！！！");
-				  System.out.println("Completed in " + turnNum + " turns");
-          break;
-        } else {
-          displayResult(numbers, userNumbers);
-        }
+      if (judge(numbers, userNumbers)) {
+        System.out.println("！！！！！Game Clear！！！！！");
+        System.out.println("Completed in " + turnNum + " turns");
+        break;
+      } else {
+        displayResult(numbers, userNumbers);
       }
     }
-    ```
+  }
+  ```
 
 ### 9. make function automaticaly (This is option)
 
