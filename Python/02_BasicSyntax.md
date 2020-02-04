@@ -69,8 +69,13 @@ for i in range(0, 10):
   print(i)
 ```
 
-9. function
+9. while
 
 ```Python
+count = 0
+
+while count < 10:
+    print(count)
+    count += 1
 
 ```
