@@ -62,14 +62,14 @@ else:
     print("OK")
 ```
 
-8. for
+8. for loop
 
 ```Python
 for i in range(0, 10):
   print(i)
 ```
 
-9. while
+9. while loop
 
 ```Python
 count = 0
@@ -79,7 +79,6 @@ while count < 10:
     count += 1
 
 ```
-
 
 ## sample codes
 
@@ -128,7 +127,7 @@ else:
   print("older than 20 years old"")
 
 
-# ユーザー入力
+# User input
 name = input("Please tell me your name")
 print("My name is " + name)
 
