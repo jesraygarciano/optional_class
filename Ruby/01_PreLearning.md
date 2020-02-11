@@ -1,0 +1,1 @@
+You don't need prepare for Ruby Class.
