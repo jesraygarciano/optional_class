@@ -81,3 +81,23 @@ while count < 10:
     count += 1
 
 ```
+
+8. Function
+
+```Ruby
+
+def printHello
+    puts "Hello World From Function"
+end
+
+# use function
+printHello
+
+
+def printName(name)
+    puts "My name is " + name
+end
+
+# use function
+printName("SeedKun")
+```
