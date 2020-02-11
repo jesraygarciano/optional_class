@@ -33,7 +33,7 @@ comment
 =end
 ```
 
-4. operations
+4. Operators
 
 ```Ruby
 
