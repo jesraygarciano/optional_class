@@ -48,7 +48,7 @@ puts 3 / 2
 
 ```Ruby
 time = 12
-if time > 12 
+if time > 12
     puts 'Good afternoon'
 else
     puts 'Good morning'
