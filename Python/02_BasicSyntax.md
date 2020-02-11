@@ -79,3 +79,72 @@ while count < 10:
     count += 1
 
 ```
+
+
+## sample codes
+
+```Python
+
+print("Hello World")
+
+# # is comment out
+
+# variables
+text = "This is text"
+print(text)
+
+text = "Updated !!!"
+print(text)
+
+# There are no constants. But there is a rule that uppercase variables are treated as constants
+TEXT = "This is constants"
+print(TEXT)
+
+# operations
+print(1 + 1)
+print(2 - 1)
+print(2 * 2)
+print(3 / 2)
+
+# Exponentiation
+print(3 ** 2)
+
+# Division (only integer results are returned)
+print(3 // 2)
+
+# Character manipulation
+print("Hello" + "World")
+print("Hello" * 5)
+
+
+# if statement
+age = 20
+if age > 10:
+  print("older than 10 years old")
+
+if age < 20:
+  print("younger than 20 years old")
+else:
+  print("older than 20 years old"")
+
+
+# ユーザー入力
+name = input("Please tell me your name")
+print("My name is " + name)
+
+# for loop
+for i in range(0,10):
+  print(i)
+
+print("text")
+
+
+# while loop
+
+count = 0
+
+while count < 10:
+    print(count)
+    count += 1
+
+```
