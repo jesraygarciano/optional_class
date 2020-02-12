@@ -13,7 +13,7 @@ You can log in with another service or create new account
 Skip every questions by click 「Skip」
 
 4. Click 「Create New Site」
-<img src="./img/01.png">
+    <img src="./img/01.png">
 
 5. Input Website name and password
 
