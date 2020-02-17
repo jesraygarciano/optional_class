@@ -90,6 +90,13 @@ else:
 ```Python
 for i in range(0, 10):
   print(i)
+
+
+fruits = ["apple", "banana", "cherry"]
+
+for x in fruits:
+  print(x)
+
 ```
 
 9. while loop
