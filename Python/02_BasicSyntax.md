@@ -22,6 +22,25 @@ print(text)
 # This is comment
 ```
 
+3.1. Indention
+
+```Python
+
+#Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses to indicate a block of code.
+
+
+```
+
+```Python
+text = "This is text"
+print(text)
+
+text = "Update !!!"
+print(text)
+```
+
+
+
 4. operations
 
 ```Python
