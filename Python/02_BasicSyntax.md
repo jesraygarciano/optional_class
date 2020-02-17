@@ -28,8 +28,15 @@ print(text)
 
 #Where in other programming languages the indentation in code is for readability only, the indentation in Python is very important. Python uses to indicate a block of code.
 
+if 5 > 2;
+  print("Five is greater than two!")
 
+if 5 > 2;
+print("Five is greater than two!")
 ```
+
+
+
 
 ```Python
 text = "This is text"
