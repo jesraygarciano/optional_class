@@ -82,12 +82,13 @@ end
 7. while
 
 ```Ruby
-count = 0
+$i = 0
+$num = 5
 
-while count < 10:
-    print(count)
-    count += 1
-
+while $i < $num  do
+   puts("Inside the loop i = #$i" )
+   $i +=1
+end
 ```
 
 8. Function
