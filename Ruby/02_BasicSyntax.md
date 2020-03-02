@@ -67,8 +67,16 @@ end
 6. for
 
 ```Ruby
-for i in range(0, 10):
-  print(i)
+
+i = "Sudo Placements"
+  
+# using for loop with the range 
+for a in 1..5 do
+      
+ puts i 
+   
+end
+
 ```
 
 7. while
