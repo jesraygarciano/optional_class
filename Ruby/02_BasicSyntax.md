@@ -105,6 +105,8 @@ printName("SeedKun")
 
 8. Function
 
+```Ruby
+
 # array 
 arr = ["HTML", "CSS", "Javascript", "Ruby"] 
   
@@ -114,3 +116,4 @@ for i in arr do
  puts i 
    
 end
+```
