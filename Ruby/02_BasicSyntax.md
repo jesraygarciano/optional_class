@@ -101,3 +101,16 @@ end
 # use function
 printName("SeedKun")
 ```
+
+
+8. Function
+
+# array 
+arr = ["HTML", "CSS", "Javascript", "Ruby"] 
+  
+# using for loop 
+for i in arr do
+      
+ puts i 
+   
+end
